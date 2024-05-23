@@ -46,6 +46,7 @@ img.dibley {
 
 
 /*GRID.HTML*/
+/*Note: I decided to use hsl color codes because it made it easier to adjust the opacity of the colors. I used hsl color codes, even on colors I didn't change the opacity on because I wanted everything to be consistent */
 .container-fluid {
   background-color: hsl(240, 100%, 99%);
 }
