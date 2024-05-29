@@ -50,6 +50,7 @@ img.dibley {
 .container-fluid {
   background-color: hsl(240, 100%, 99%);
 }
+
 .wrapper {
   display: grid;
   height: 450px;
