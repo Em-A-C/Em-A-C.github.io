@@ -183,7 +183,6 @@ hr {
 
 }
 
-
 .carousel1-prev-icon:after {
   content: '<';
   font-size: 55px;
@@ -248,4 +247,18 @@ hr {
 
 .carousel-img-set2 {
   max-height: 100%
+}
+
+.carousel-caption {
+  background-color: rgb(255, 255, 240, 0.65);
+}
+
+.caption-set2 {
+  position: absolute;
+  transform: translateY(-340%);
+  justify-content: center;
+}
+
+.carousel-caption-text {
+  color: black;
 }
