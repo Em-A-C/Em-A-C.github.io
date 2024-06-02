@@ -151,7 +151,12 @@ p.grid {
   border-radius: 10px;
 }
 
+
+/* ****************************************************************** */
+
+
 /*CAROUSEL.HTML*/
+/* General Styling for Carousels */
 .container-fluid {
   background-color: #F5FFFA;
 }
@@ -183,6 +188,7 @@ hr {
 
 }
 
+/* Next & Previous Navigation Icons */
 .carousel1-prev-icon:after {
   content: '<';
   font-size: 55px;
@@ -192,7 +198,6 @@ hr {
   justify-self: center;
   align-self: center;
 }
-
 
 .carousel1-next-icon:after {
   content: '>';
@@ -214,7 +219,6 @@ hr {
   align-self: center;
 }
 
-
 .carousel2-next-icon:after {
   content: '>';
   font-size: 55px;
@@ -225,6 +229,7 @@ hr {
   align-self: center;
 }
 
+/* Carousel Imgs */
 .set-1 {
   max-width: 900px;
   max-height: 1000px;
@@ -249,16 +254,67 @@ hr {
   max-height: 100%
 }
 
-.carousel-caption {
+/* Captions */
+.carousel-caption-text {
+  color: black;
+  font-family: "Edu TAS Beginner", cursive;
+  font-weight: 600px;
+  font-style: normal;
+}
+
+h5.carousel-caption-text {
+  font-size: 25px;
+}
+
+p.carousel-caption-text {
+  font-size: 20px;
+}
+
+div.caption-set1 {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+  justify-self: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-width: 750px;
+  min-height: 10px;
+  background-color: rgb(255, 255, 240, 0.75);
+}
+
+div.caption-set2 {
+  position: absolute;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+  justify-self: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-width: 365px;
+  min-height: 10px;
   background-color: rgb(255, 255, 240, 0.65);
 }
 
-.caption-set2 {
-  position: absolute;
-  transform: translateY(-340%);
-  justify-content: center;
+.caption-img1 {
+  transform: translateY(-380%);
 }
 
-.carousel-caption-text {
-  color: black;
+.caption-img2 {
+  transform: translateY(-280%);
+}
+
+.caption-img3 {
+  transform: translateY(-300%);
+}
+
+.caption-img4 {
+  transform: translateY(-285%);
+}
+
+.caption-img5 {
+  transform: translateY(-30%);
 }
