@@ -6,10 +6,10 @@ body {
     padding-top: 5rem;
 }
 
-main {
+main.index-container,
+main.contact-container,
+main.grid-container {
     padding: 20px;
-}
-main.container-fluid {
     width: 50%;
 }
 
