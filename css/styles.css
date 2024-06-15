@@ -5,6 +5,7 @@
 /*GLOBAL*/
 body {
    padding-top: 5rem;
+   background-color: hsl(240, 100%, 99%);
 }
 
 main.index-container,
