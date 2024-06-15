@@ -51,16 +51,10 @@
         <div id="content"></div>
 
         <script>
-            const h1 = ReactDOM.createRoot(document.getElementById("h1"));
-
-            const img = ReactDOM.createRoot(document.getElementById("img"));
-
-            const content = ReactDOM.createRoot(document.getElementById("content"));
-
             // Step one - Create a React element
             const user = {
                 name: "About Em",
-                imageUrl: "images/about_img.jpg",
+                imageUrl: "about_img.jpg",
                 bio: `Hi there! As you may have noticed from my homepage, my name is Emily, but I go by the name Em
             and am currently pursuing a career in the fascinating web design and development field.When I'm not busy
             with my studies, I love to spend time outdoors - walking my furry companion, hiking, fly fishing, skiing,
@@ -76,10 +70,13 @@
             };
 
             // Step 2: Render the React element
-            // https://legacy.reactjs.org/docs/rendering-elements.html
-            h1.render(user.name);
-            img.render(user.imageUrl);
-            content.render(user.bio);
+            const h1 = React.createElement('h1', null, user.name);
+            const img = React.createElement('img', { src: user.imageUrl });
+            const content = React.createElement('p', null, user.bio);
+
+            ReactDOM.render(h1, document.getElementById('h1'));
+            ReactDOM.render(img, document.getElementById('img'));
+            ReactDOM.render(content, document.getElementById('content'));
 
 
         </script>
