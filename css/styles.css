@@ -2,57 +2,51 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap");
 
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
+
+
 /*GLOBAL*/
 body {
-   padding-top: 5rem;
+    padding-top: 5rem;
+
 }
 
-main.index-container,
-main.grid-container {
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+main {
     padding: 20px;
+}
+main.container-fluid {
     width: 50%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Playfair Display", serif;
-}
-
-main {
-  padding: 20px;
-}
-
-main.container-fluid {
-  width: 50%;
-}
-
 p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
 }
 
 nav {
-  margin-bottom: 120px;
+    margin-bottom: 120px;
 }
 
 .navbar-brand {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
-button.navbar-toggler {
-  margin-right: 10px;
+button.navbar-toggler{
+margin-right: 10px;
 }
 
 .home_2col {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 img.dibley {
-  max-width: 100%;
+    max-width: 100%
 }
 
 /*GRID.HTML*/
@@ -273,7 +267,6 @@ p.grid {
 /* ****************************************************************** */
 
 
-/*CAROUSEL.HTML*/
 /* General Styling for Carousels */
 .container-fluid {
   background-color: #F5FFFA;
@@ -336,6 +329,7 @@ hr {
   justify-self: center;
   align-self: center;
 }
+
 
 .carousel2-next-icon:after {
   content: '>';
@@ -436,3 +430,4 @@ div.caption-set2 {
 .caption-img5 {
   transform: translateY(-30%);
 }
+
