@@ -1,6 +1,6 @@
 /* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap");
 
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
@@ -8,25 +8,29 @@
 
 /*GLOBAL*/
 body {
-    padding-top: 5rem;
-
+  padding: 5rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Playfair Display', serif;
+.carousel-body {
+  padding: 0.5rem;
 }
 
-
-main {
-    padding: 20px;
+main.main-container {
+  width: 50%;
 }
-main.container-fluid {
-    width: 50%;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
 }
 
 nav {
@@ -46,7 +50,7 @@ margin-right: 10px;
 }
 
 img.dibley {
-    max-width: 100%
+  max-width: 100%
 }
 
 /*GRID.HTML*/
@@ -262,10 +266,8 @@ p.grid {
   border: 3px dotted;
   border-radius: 10px;
 }
-
 
 /* ****************************************************************** */
-
 
 /* General Styling for Carousels */
 .container-fluid {
@@ -329,7 +331,6 @@ hr {
   justify-self: center;
   align-self: center;
 }
-
 
 .carousel2-next-icon:after {
   content: '>';
