@@ -1,0 +1,646 @@
+/* CSS Document */
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* ------------------------------ GLOBAL ------------------------------ */
+nav.navbar {
+  background-color: #e3f2fd;
+}
+
+li.nav-item {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+}
+
+body {
+  padding-top: 5rem;
+  margin: auto 0;
+}
+
+.carousel-body {
+  padding: 0.5rem;
+}
+
+.carousel-mainheader {
+  padding-top: 5rem;
+}
+
+main.main-container {
+  width: 50%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poetsen One", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: auto 0;
+  padding: 10px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+}
+
+nav {
+  margin-bottom: 120px;
+  padding: 120px;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+
+button.navbar-toggler {
+  margin-right: 10px;
+}
+
+.home_2col {
+  margin-bottom: 20px;
+}
+
+img.dibley {
+  max-width: 100%;
+}
+
+.footer-container {
+  margin: auto 0;
+  padding: 20px;
+}
+
+/* Medium Screen */
+@media screen and (min-width: 630px) and (max-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+    margin: auto 0;
+    padding: 8px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: auto 0;
+    padding: 8px;
+  }
+
+  p {
+    font-size: 18px;
+    margin: auto 0;
+    padding: 8px;
+  }
+
+  li {
+    line-height: 1.5;
+    font-size: 15px;
+  }
+}
+
+/* Small Screen */
+@media screen and (max-width: 630px) {
+  h1 {
+    font-size: 2.5rem;
+    margin: auto 0;
+    padding: 5px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: auto 0;
+    padding: 5px;
+  }
+
+  p {
+    font-size: 12px;
+    margin: auto 0;
+    padding: 5px;
+  }
+
+  li {
+    line-height: 1.4;
+    font-size: 12px;
+  }
+}
+
+/* ------------------------------ GRID.HTML ------------------------------ */
+/*Note: I decided to use hsl color codes because it made it easier to adjust the opacity of the colors. I used hsl color codes, even on colors I didn't change the opacity on because I wanted everything to be consistent */
+.wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+  margin: 25px;
+  margin-bottom: 60px;
+  padding: 16px;
+}
+
+p.grid-paragraph {
+  text-align: center;
+}
+
+p.grid {
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.box-1 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+  background-color: hsl(0, 53%, 58%, 0.3);
+  border-color: hsl(348, 83%, 47%, 0.6);
+  line-height: 150px;
+  border: 3px dotted;
+  border-radius: 10px;
+}
+
+.box-2 {
+  grid-row: 2 / 4;
+  grid-column: 1 / 2;
+  background-color: hsl(39, 100%, 50%, 0.3);
+  border-color: hsl(33, 100%, 50%);
+  line-height: 160px;
+  border: 3px dotted;
+  border-radius: 10px;
+}
+
+.box-3 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+  background-color: hsl(60, 100%, 94%, 1.2);
+  border-color: hsl(51, 100%, 50%, 1.8);
+  line-height: 70px;
+  border: 3px dotted;
+  border-radius: 10px;
+}
+
+.box-4 {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  background-color: hsl(120, 93%, 79%, 0.3);
+  border-color: hsl(115, 27%, 64%, 1.2);
+  line-height: 70px;
+  border: 3px dotted;
+  border-radius: 10px;
+}
+
+.box-5 {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+  background-color: hsl(180, 100%, 94%, 0.8);
+  border-color: hsl(182, 25%, 50%);
+  line-height: 70px;
+  border: 3px dotted;
+  border-radius: 10px;
+}
+
+.box-6 {
+  grid-row: 4 / 4;
+  grid-column: 1 / 4;
+  background-color: hsl(240, 67%, 94%, 0.8);
+  border-color: hsl(260, 60%, 65%);
+  line-height: 60px;
+  border: 3px dotted;
+  border-radius: 10px;
+}
+
+/* Medium Screen */
+@media screen and (min-width: 830px) and (max-width: 1028px) {
+  .wrapper {
+    margin-bottom: 40px;
+  }
+
+  .box-1 {
+    grid-row: 1 / 1;
+    grid-column: 1 / 3;
+    line-height: 65px;
+  }
+
+  .box-2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    line-height: 65px;
+  }
+
+  .box-3 {
+    grid-row: 2 / 2;
+    grid-column: 2 / 3;
+    line-height: 65px;
+    ;
+  }
+
+  .box-4 {
+    grid-row: 3 / 3;
+    grid-column: 1 / 2;
+    line-height: 65px;
+  }
+
+  .box-5 {
+    grid-row: 3 / 3;
+    grid-column: 2 / 3;
+    line-height: 65px;
+  }
+
+  .box-6 {
+    grid-row: 4 / 4;
+    grid-column: 1 / 3;
+    line-height: 65px;
+  }
+}
+
+/* Small-Medium Screen */
+@media screen and (min-width: 780px) and (max-width: 830px) {
+  .wrapper {
+    margin-bottom: 40px;
+  }
+
+  .box-1 {
+    grid-row: 1 / 1;
+    grid-column: 1 / 2;
+    line-height: 60px;
+  }
+
+  .box-2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 1;
+    line-height: 60px;
+  }
+
+  .box-3 {
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+    line-height: 60px;
+    ;
+  }
+
+  .box-4 {
+    grid-row: 3 / 3;
+    grid-column: 1 / 1;
+    line-height: 60px;
+  }
+
+  .box-5 {
+    grid-row: 3 / 3;
+    grid-column: 2 / 2;
+    line-height: 60px;
+  }
+
+  .box-6 {
+    grid-row: 4 / 4;
+    grid-column: 1 / 2;
+    line-height: 60px;
+  }
+}
+
+/* Small Screen (stacks the boxes) */
+@media screen and (max-width: 780px) {
+  .wrapper {
+    margin-bottom: 80px;
+  }
+
+  .box-1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    line-height: 40px;
+  }
+
+  .box-2 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    line-height: 40px;
+  }
+
+  .box-3 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    line-height: 40px;
+  }
+
+  .box-4 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    line-height: 40px;
+  }
+
+  .box-5 {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+    line-height: 40px;
+  }
+
+  .box-6 {
+    grid-row: 6 / 7;
+    grid-column: 1 / 2;
+    line-height: 40px;
+  }
+}
+
+/* ------------------------------ CAROUSEL.HTML ------------------------------ */
+.carousel1-heading {
+  text-align: center;
+  padding-top: 90px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.carousel2-heading {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+hr {
+  margin: 2em auto;
+  height: 4px;
+  background-color: #228B22;
+  border: none;
+
+}
+
+@media screen and (min-width: 1044px) {
+
+  .carousel1-prev-icon,
+  .carousel1-next-icon {
+    filter: invert(100%);
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  .carousel2-prev-icon,
+  .carousel2-next-icon {
+    filter: invert(100%);
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+/* Carousel Imgs */
+.set-1 {
+  max-width: 900px;
+  max-height: 1000px;
+  justify-content: center;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.carousel-img-set1 {
+  max-width: 100%
+}
+
+.set-2 {
+  max-width: 500px;
+  max-height: 1000px;
+  justify-content: center;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.carousel-img-set2 {
+  max-height: 100%
+}
+
+/* Captions */
+.carousel-caption-text {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h5.carousel-caption-text {
+  padding-top: 8px;
+  font-size: 25px;
+}
+
+p.carousel-caption-text {
+  font-size: 20px;
+}
+
+/* Center and style caption containers */
+.caption-set1,
+.caption-set2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+  justify-self: center;
+  padding: 0 5px;
+  background-color: rgba(255, 255, 240, 0.75);
+  min-width: 365px;
+}
+
+div.caption-set1 {
+  width: 750px;
+  min-height: 10px;
+  background-color: rgb(255, 255, 240, 0.75);
+}
+
+div.caption-set2 {
+  width: 385px;
+  min-height: 10px;
+  background-color: rgb(255, 255, 240, 0.65);
+}
+
+/* Adjust image caption positions */
+.caption-img1,
+.caption-img2,
+.caption-img3,
+.caption-img4,
+.caption-img5 {
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.caption-container {
+  background: #f8f9fa;
+  /* Background color for the caption container */
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  /* Space between carousel and captions */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+  .caption-set1,
+  .caption-set2 {
+    min-width: 95%;
+    /* Adjust for smaller screens */
+  }
+
+  h5.carousel-caption-text {
+    font-size: 1.5rem;
+    /* Decrease font size for smaller screens */
+  }
+
+  p.carousel-caption-text {
+    font-size: 1.2rem;
+    /* Decrease font size for smaller screens */
+  }
+}
+
+/* Keep captions visible on smaller screens */
+@media (max-width: 767px) {
+  .carousel-caption {
+    display: block !important;
+    /* Ensure captions are displayed */
+    opacity: 1 !important;
+    /* Make captions fully visible */
+    visibility: visible !important;
+    /* Ensure captions are visible */
+  }
+
+  h5.carousel-caption-text {
+    padding-top: 8px;
+    font-size: 16px;
+    /* Adjust font size of captions for smaller screens */
+  }
+
+  p.carousel-caption-text {
+    font-size: 12px;
+    /* Adjust font size of captions for smaller screens */
+  }
+}
+
+/* ------------------------------ ABOUT.HTML ------------------------------ */
+.responsive-img {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 100%;
+  border-radius: 25px;
+}
+
+
+/* ------------------------------ CONTACT.HTML ------------------------------ */
+/* Level 1 heading ("Contact Me") for contact page */
+h1.heading-contact {
+  text-align: center;
+  padding-top: 15px;
+  margin: 0 auto;
+}
+
+/* Styles the "Contact Me" form ONLY, NOT the LinkedIn or Survey section */
+div.contact-form {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+div.linkedin-form {
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+/* For all level 2 heading on contact.html page */
+h2.heading2 {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+/* Styles the paragraph explaing what the red asterick is for on the form */
+p.required {
+  font-size: 14px;
+}
+
+/* Styles all labels for input fields in form */
+.form-label {
+  padding-right: 23px;
+  font-size: 18px;
+}
+
+/* Styles "Email Username" label for email username input field */
+.input-grid-label {
+  font-size: 16px;
+}
+
+/* Styles label for email domain dropdown menu */
+.dropdown-email {
+  font-size: 15px;
+}
+
+/* Styling for the "Agree to terms and conditions" next to checkbox */
+.terms-conditions {
+  font-size: 15px;
+}
+
+/* Styles for the textarea in my code for contact.html */
+textarea {
+  max-height: 500px;
+}
+
+.textarea-label {
+  padding: 5px;
+  margin: auto 0;
+  font-size: 18px;
+}
+
+/* Styles input/select fields according to whether they are set to 'required' or 'optional' */
+input:required {
+  border: 1px solid black;
+}
+
+input:optional {
+  border: 1px solid silver;
+}
+
+select:required {
+  border: 1px solid black;
+}
+
+/* Styles the LinkedIn */
+.linkedin-form {
+  margin: 0 auto;
+  padding: 5px;
+}
+
+/* My LinkedIn" button */
+button.general-button {
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+button.btn-custom {
+  background-color: #008080;
+  color: #E0FFFF;
+  border-color: #E0FFFF;
+  border-width: 5px;
+}
+
+button.btn-custom:hover {
+  background-color: #E0FFFF;
+  color: #008080;
+  border-color: #008080;
+}
